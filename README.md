@@ -16,11 +16,3 @@ Java / Spring Boot / JPA 기반으로 **커머스 서비스**를 만드는 데 �
 
 ---
 
-## Architecture (overview)
-
-```mermaid
-flowchart LR
-  FE[React + TS] -->|REST| API[Spring Boot]
-  API --> DB[(MySQL)]
-  API --> FS[File Storage: Local/S3]
-  API --> AUTH[JWT Auth & Role]
