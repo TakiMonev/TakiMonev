@@ -1,16 +1,26 @@
-## Hi there 👋
+# 이상윤 (SangYoun) · Backend Engineer
 
-<!--
-**TakiMonev/TakiMonev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Java / Spring Boot / JPA 기반으로 **커머스 서비스**를 만드는 데 관심이 많습니다.  
+최근에는 **상품 옵션(SKU/Variant) 설계**, **권한/인증(JWT)**, **쿼리 최적화**, **파일 업로드(S3/Local)** 같은 “실서비스에서 터지는 문제”를 주로 다루고 있어요.
 
-Here are some ideas to get you started:
+- 🔭 Building: **HotSpot** (e-commerce + seller ranking + fan loyalty ranking)
+- 🧱 Favorite stack: **Java, Spring Boot, JPA/Hibernate, MySQL**, (FE: **React + TS**)
+- 🧠 I care about: Domain modeling, SQL performance, clean APIs, pragmatic refactoring
+- 🌱 Now learning: Query tuning / Indexing / System design
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## What I'm working on (Private repos, but here's the outline)
+
+### 🛒 HotSpot Platform (private)
+
+---
+
+## Architecture (overview)
+
+```mermaid
+flowchart LR
+  FE[React + TS] -->|REST| API[Spring Boot]
+  API --> DB[(MySQL)]
+  API --> FS[File Storage: Local/S3]
+  API --> AUTH[JWT Auth & Role]
